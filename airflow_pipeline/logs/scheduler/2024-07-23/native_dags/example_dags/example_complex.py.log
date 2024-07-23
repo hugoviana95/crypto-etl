@@ -1,0 +1,25 @@
+[2024-07-22T22:37:01.377-0300] {processor.py:161} INFO - Started process (PID=1050803) to work on /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/example_complex.py
+[2024-07-22T22:37:01.378-0300] {processor.py:830} INFO - Processing file /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-07-22T22:37:01.379-0300] {logging_mixin.py:188} INFO - [2024-07-22T22:37:01.379-0300] {dagbag.py:545} INFO - Filling up the DagBag from /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/example_complex.py
+[2024-07-22T22:37:01.384-0300] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/example_complex.py
+[2024-07-22T22:37:01.455-0300] {logging_mixin.py:188} INFO - [2024-07-22T22:37:01.454-0300] {override.py:1858} INFO - Created Permission View: can edit on DAG:example_complex
+[2024-07-22T22:37:01.464-0300] {logging_mixin.py:188} INFO - [2024-07-22T22:37:01.464-0300] {override.py:1858} INFO - Created Permission View: can delete on DAG:example_complex
+[2024-07-22T22:37:01.472-0300] {logging_mixin.py:188} INFO - [2024-07-22T22:37:01.471-0300] {override.py:1858} INFO - Created Permission View: can read on DAG:example_complex
+[2024-07-22T22:37:01.472-0300] {logging_mixin.py:188} INFO - [2024-07-22T22:37:01.472-0300] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-22T22:37:01.478-0300] {logging_mixin.py:188} INFO - [2024-07-22T22:37:01.478-0300] {dag.py:3111} INFO - Creating ORM DAG for example_complex
+[2024-07-22T22:37:01.478-0300] {logging_mixin.py:188} INFO - [2024-07-22T22:37:01.478-0300] {dag.py:3947} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-07-22T22:37:01.493-0300] {processor.py:183} INFO - Processing /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/example_complex.py took 0.119 seconds
+[2024-07-22T22:38:05.188-0300] {processor.py:161} INFO - Started process (PID=1051609) to work on /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/example_complex.py
+[2024-07-22T22:38:05.190-0300] {processor.py:830} INFO - Processing file /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-07-22T22:38:05.191-0300] {logging_mixin.py:188} INFO - [2024-07-22T22:38:05.190-0300] {dagbag.py:545} INFO - Filling up the DagBag from /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/example_complex.py
+[2024-07-22T22:38:05.196-0300] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/example_complex.py
+[2024-07-22T22:38:05.211-0300] {logging_mixin.py:188} INFO - [2024-07-22T22:38:05.211-0300] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-22T22:38:05.218-0300] {logging_mixin.py:188} INFO - [2024-07-22T22:38:05.218-0300] {dag.py:3947} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-07-22T22:38:05.234-0300] {processor.py:183} INFO - Processing /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/example_complex.py took 0.049 seconds
+[2024-07-22T22:39:09.136-0300] {processor.py:161} INFO - Started process (PID=1052455) to work on /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/example_complex.py
+[2024-07-22T22:39:09.142-0300] {processor.py:830} INFO - Processing file /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-07-22T22:39:09.144-0300] {logging_mixin.py:188} INFO - [2024-07-22T22:39:09.143-0300] {dagbag.py:545} INFO - Filling up the DagBag from /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/example_complex.py
+[2024-07-22T22:39:09.152-0300] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/example_complex.py
+[2024-07-22T22:39:09.172-0300] {logging_mixin.py:188} INFO - [2024-07-22T22:39:09.172-0300] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-22T22:39:09.182-0300] {logging_mixin.py:188} INFO - [2024-07-22T22:39:09.181-0300] {dag.py:3947} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-07-22T22:39:09.206-0300] {processor.py:183} INFO - Processing /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/example_complex.py took 0.075 seconds

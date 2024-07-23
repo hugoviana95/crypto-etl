@@ -1,0 +1,32 @@
+[2024-07-22T22:36:41.622-0300] {processor.py:161} INFO - Started process (PID=1050663) to work on /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-22T22:36:41.622-0300] {processor.py:830} INFO - Processing file /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-07-22T22:36:41.623-0300] {logging_mixin.py:188} INFO - [2024-07-22T22:36:41.623-0300] {dagbag.py:545} INFO - Filling up the DagBag from /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-22T22:36:41.627-0300] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-22T22:36:41.693-0300] {logging_mixin.py:188} INFO - [2024-07-22T22:36:41.692-0300] {override.py:1858} INFO - Created Permission View: can edit on DAG:tutorial_dag
+[2024-07-22T22:36:41.703-0300] {logging_mixin.py:188} INFO - [2024-07-22T22:36:41.703-0300] {override.py:1858} INFO - Created Permission View: can delete on DAG:tutorial_dag
+[2024-07-22T22:36:41.711-0300] {logging_mixin.py:188} INFO - [2024-07-22T22:36:41.710-0300] {override.py:1858} INFO - Created Permission View: can read on DAG:tutorial_dag
+[2024-07-22T22:36:41.711-0300] {logging_mixin.py:188} INFO - [2024-07-22T22:36:41.711-0300] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-22T22:36:41.718-0300] {logging_mixin.py:188} INFO - [2024-07-22T22:36:41.718-0300] {dag.py:3111} INFO - Creating ORM DAG for tutorial_dag
+[2024-07-22T22:36:41.718-0300] {logging_mixin.py:188} INFO - [2024-07-22T22:36:41.718-0300] {dag.py:3947} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-07-22T22:36:41.734-0300] {processor.py:183} INFO - Processing /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py took 0.116 seconds
+[2024-07-22T22:37:32.992-0300] {processor.py:161} INFO - Started process (PID=1051224) to work on /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-22T22:37:32.993-0300] {processor.py:830} INFO - Processing file /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-07-22T22:37:32.994-0300] {logging_mixin.py:188} INFO - [2024-07-22T22:37:32.994-0300] {dagbag.py:545} INFO - Filling up the DagBag from /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-22T22:37:32.998-0300] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-22T22:37:33.010-0300] {logging_mixin.py:188} INFO - [2024-07-22T22:37:33.010-0300] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-22T22:37:33.019-0300] {logging_mixin.py:188} INFO - [2024-07-22T22:37:33.019-0300] {dag.py:3947} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-07-22T22:37:33.035-0300] {processor.py:183} INFO - Processing /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py took 0.047 seconds
+[2024-07-22T22:38:22.577-0300] {processor.py:161} INFO - Started process (PID=1051857) to work on /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-22T22:38:22.579-0300] {processor.py:830} INFO - Processing file /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-07-22T22:38:22.580-0300] {logging_mixin.py:188} INFO - [2024-07-22T22:38:22.579-0300] {dagbag.py:545} INFO - Filling up the DagBag from /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-22T22:38:22.583-0300] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-22T22:38:22.595-0300] {logging_mixin.py:188} INFO - [2024-07-22T22:38:22.594-0300] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-22T22:38:22.601-0300] {logging_mixin.py:188} INFO - [2024-07-22T22:38:22.601-0300] {dag.py:3947} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-07-22T22:38:22.619-0300] {processor.py:183} INFO - Processing /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py took 0.045 seconds
+[2024-07-22T22:39:25.620-0300] {processor.py:161} INFO - Started process (PID=1052835) to work on /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-22T22:39:25.627-0300] {processor.py:830} INFO - Processing file /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-07-22T22:39:25.629-0300] {logging_mixin.py:188} INFO - [2024-07-22T22:39:25.628-0300] {dagbag.py:545} INFO - Filling up the DagBag from /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-22T22:39:25.634-0300] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-22T22:39:25.647-0300] {logging_mixin.py:188} INFO - [2024-07-22T22:39:25.647-0300] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-22T22:39:25.654-0300] {logging_mixin.py:188} INFO - [2024-07-22T22:39:25.654-0300] {dag.py:3947} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-07-22T22:39:25.674-0300] {processor.py:183} INFO - Processing /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py took 0.062 seconds

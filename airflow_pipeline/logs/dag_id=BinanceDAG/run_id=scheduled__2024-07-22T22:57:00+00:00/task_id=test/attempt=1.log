@@ -1,0 +1,75 @@
+[2024-07-22T22:43:04.926-0300] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-22T22:43:04.933-0300] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: BinanceDAG.test scheduled__2024-07-22T22:57:00+00:00 [queued]>
+[2024-07-22T22:43:04.936-0300] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: BinanceDAG.test scheduled__2024-07-22T22:57:00+00:00 [queued]>
+[2024-07-22T22:43:04.937-0300] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-22T22:43:04.948-0300] {taskinstance.py:2330} INFO - Executing <Task(BinanceOperator): test> on 2024-07-22 22:57:00+00:00
+[2024-07-22T22:43:04.950-0300] {standard_task_runner.py:64} INFO - Started process 1055780 to run task
+[2024-07-22T22:43:04.953-0300] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'BinanceDAG', 'test', 'scheduled__2024-07-22T22:57:00+00:00', '--job-id', '21', '--raw', '--subdir', 'DAGS_FOLDER/binance_dag.py', '--cfg-path', '/tmp/tmpwufhpjdl']
+[2024-07-22T22:43:04.954-0300] {standard_task_runner.py:91} INFO - Job 21: Subtask test
+[2024-07-22T22:43:04.990-0300] {task_command.py:426} INFO - Running <TaskInstance: BinanceDAG.test scheduled__2024-07-22T22:57:00+00:00 [running]> on host Galaxybook.
+[2024-07-22T22:43:05.034-0300] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='BinanceDAG' AIRFLOW_CTX_TASK_ID='test' AIRFLOW_CTX_EXECUTION_DATE='2024-07-22T22:57:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-22T22:57:00+00:00'
+[2024-07-22T22:43:05.034-0300] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-22T22:43:05.046-0300] {base.py:84} INFO - Using connection ID 'binance_default' for task execution.
+[2024-07-22T22:43:05.049-0300] {base.py:84} INFO - Using connection ID 'binance_default' for task execution.
+[2024-07-22T22:43:05.050-0300] {binance_hook.py:48} INFO - URL: https://api.binance.com/api/v3/klines?symbol=BTCBRL&interval=1m&startTime=%7B%7B+data_interval_start+%7D%7D&endTime=%7B%7B+data_interval_end+%7D%7D&timeZone=-3
+[2024-07-22T22:43:05.443-0300] {http.py:200} ERROR - HTTP error: Bad Request
+[2024-07-22T22:43:05.444-0300] {http.py:201} ERROR - {"code":-1100,"msg":"Illegal characters found in parameter 'startTime'; legal range is '^[0-9]{1,20}$'."}
+[2024-07-22T22:43:05.444-0300] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-22T22:43:05.507-0300] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/providers/http/hooks/http.py", line 198, in check_response
+    response.raise_for_status()
+  File "/home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.binance.com/api/v3/klines?symbol=BTCBRL&interval=1m&startTime=%7B%7B+data_interval_start+%7D%7D&endTime=%7B%7B+data_interval_end+%7D%7D&timeZone=-3
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hugoviana/Projetos/crypto-etl/airflow_pipeline/operators/binance_operator.py", line 29, in execute
+    r = BinanceHook(self.start_time, self.end_time, 'BTCBRL', '1m').run()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hugoviana/Projetos/crypto-etl/airflow_pipeline/hook/binance_hook.py", line 55, in run
+    return self.connect_to_endpoint(url_raw, session)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hugoviana/Projetos/crypto-etl/airflow_pipeline/hook/binance_hook.py", line 49, in connect_to_endpoint
+    return self.run_and_check(session, prep, {})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/providers/http/hooks/http.py", line 239, in run_and_check
+    self.check_response(response)
+  File "/home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/providers/http/hooks/http.py", line 202, in check_response
+    raise AirflowException(str(response.status_code) + ":" + response.reason)
+airflow.exceptions.AirflowException: 400:Bad Request
+[2024-07-22T22:43:05.509-0300] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=BinanceDAG, task_id=test, run_id=scheduled__2024-07-22T22:57:00+00:00, execution_date=20240722T225700, start_date=20240723T014304, end_date=20240723T014305
+[2024-07-22T22:43:05.519-0300] {standard_task_runner.py:110} ERROR - Failed to execute job 21 for task test (400:Bad Request; 1055780)
+[2024-07-22T22:43:05.529-0300] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2024-07-22T22:43:05.535-0300] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-22T22:43:05.535-0300] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-07-22T22:45:53.719-0300] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-22T22:45:53.726-0300] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: BinanceDAG.test scheduled__2024-07-22T22:57:00+00:00 [queued]>
+[2024-07-22T22:45:53.730-0300] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: BinanceDAG.test scheduled__2024-07-22T22:57:00+00:00 [queued]>
+[2024-07-22T22:45:53.730-0300] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-22T22:45:53.741-0300] {taskinstance.py:2330} INFO - Executing <Task(BinanceOperator): test> on 2024-07-22 22:57:00+00:00
+[2024-07-22T22:45:53.743-0300] {standard_task_runner.py:64} INFO - Started process 1059061 to run task
+[2024-07-22T22:45:53.745-0300] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'BinanceDAG', 'test', 'scheduled__2024-07-22T22:57:00+00:00', '--job-id', '59', '--raw', '--subdir', 'DAGS_FOLDER/binance_dag.py', '--cfg-path', '/tmp/tmpc_i2vfte']
+[2024-07-22T22:45:53.746-0300] {standard_task_runner.py:91} INFO - Job 59: Subtask test
+[2024-07-22T22:45:53.778-0300] {task_command.py:426} INFO - Running <TaskInstance: BinanceDAG.test scheduled__2024-07-22T22:57:00+00:00 [running]> on host Galaxybook.
+[2024-07-22T22:45:53.825-0300] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='BinanceDAG' AIRFLOW_CTX_TASK_ID='test' AIRFLOW_CTX_EXECUTION_DATE='2024-07-22T22:57:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-22T22:57:00+00:00'
+[2024-07-22T22:45:53.826-0300] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-22T22:45:53.839-0300] {base.py:84} INFO - Using connection ID 'binance_default' for task execution.
+[2024-07-22T22:45:53.841-0300] {base.py:84} INFO - Using connection ID 'binance_default' for task execution.
+[2024-07-22T22:45:53.842-0300] {binance_hook.py:48} INFO - URL: https://api.binance.com/api/v3/klines?symbol=BTCBRL&interval=1m&startTime=1721699093611&endTime=1721699153611&timeZone=-3
+[2024-07-22T22:45:54.231-0300] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-22T22:45:54.304-0300] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=BinanceDAG, task_id=test, run_id=scheduled__2024-07-22T22:57:00+00:00, execution_date=20240722T225700, start_date=20240723T014553, end_date=20240723T014554
+[2024-07-22T22:45:54.322-0300] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-07-22T22:45:54.329-0300] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-22T22:45:54.330-0300] {local_task_job_runner.py:222} INFO - ::endgroup::

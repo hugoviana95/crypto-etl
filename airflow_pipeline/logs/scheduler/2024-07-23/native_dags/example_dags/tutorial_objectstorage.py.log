@@ -1,0 +1,25 @@
+[2024-07-22T22:36:44.105-0300] {processor.py:161} INFO - Started process (PID=1050677) to work on /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py
+[2024-07-22T22:36:44.105-0300] {processor.py:830} INFO - Processing file /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py for tasks to queue
+[2024-07-22T22:36:44.107-0300] {logging_mixin.py:188} INFO - [2024-07-22T22:36:44.106-0300] {dagbag.py:545} INFO - Filling up the DagBag from /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py
+[2024-07-22T22:36:44.112-0300] {processor.py:840} INFO - DAG(s) 'tutorial_objectstorage' retrieved from /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py
+[2024-07-22T22:36:44.182-0300] {logging_mixin.py:188} INFO - [2024-07-22T22:36:44.181-0300] {override.py:1858} INFO - Created Permission View: can edit on DAG:tutorial_objectstorage
+[2024-07-22T22:36:44.192-0300] {logging_mixin.py:188} INFO - [2024-07-22T22:36:44.192-0300] {override.py:1858} INFO - Created Permission View: can delete on DAG:tutorial_objectstorage
+[2024-07-22T22:36:44.200-0300] {logging_mixin.py:188} INFO - [2024-07-22T22:36:44.200-0300] {override.py:1858} INFO - Created Permission View: can read on DAG:tutorial_objectstorage
+[2024-07-22T22:36:44.201-0300] {logging_mixin.py:188} INFO - [2024-07-22T22:36:44.201-0300] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-22T22:36:44.207-0300] {logging_mixin.py:188} INFO - [2024-07-22T22:36:44.207-0300] {dag.py:3111} INFO - Creating ORM DAG for tutorial_objectstorage
+[2024-07-22T22:36:44.207-0300] {logging_mixin.py:188} INFO - [2024-07-22T22:36:44.207-0300] {dag.py:3947} INFO - Setting next_dagrun for tutorial_objectstorage to None, run_after=None
+[2024-07-22T22:36:44.224-0300] {processor.py:183} INFO - Processing /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py took 0.123 seconds
+[2024-07-22T22:37:34.424-0300] {processor.py:161} INFO - Started process (PID=1051238) to work on /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py
+[2024-07-22T22:37:34.425-0300] {processor.py:830} INFO - Processing file /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py for tasks to queue
+[2024-07-22T22:37:34.426-0300] {logging_mixin.py:188} INFO - [2024-07-22T22:37:34.426-0300] {dagbag.py:545} INFO - Filling up the DagBag from /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py
+[2024-07-22T22:37:34.431-0300] {processor.py:840} INFO - DAG(s) 'tutorial_objectstorage' retrieved from /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py
+[2024-07-22T22:37:34.441-0300] {logging_mixin.py:188} INFO - [2024-07-22T22:37:34.441-0300] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-22T22:37:34.448-0300] {logging_mixin.py:188} INFO - [2024-07-22T22:37:34.448-0300] {dag.py:3947} INFO - Setting next_dagrun for tutorial_objectstorage to None, run_after=None
+[2024-07-22T22:37:34.464-0300] {processor.py:183} INFO - Processing /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py took 0.043 seconds
+[2024-07-22T22:38:24.598-0300] {processor.py:161} INFO - Started process (PID=1051877) to work on /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py
+[2024-07-22T22:38:24.604-0300] {processor.py:830} INFO - Processing file /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py for tasks to queue
+[2024-07-22T22:38:24.605-0300] {logging_mixin.py:188} INFO - [2024-07-22T22:38:24.605-0300] {dagbag.py:545} INFO - Filling up the DagBag from /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py
+[2024-07-22T22:38:24.610-0300] {processor.py:840} INFO - DAG(s) 'tutorial_objectstorage' retrieved from /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py
+[2024-07-22T22:38:24.620-0300] {logging_mixin.py:188} INFO - [2024-07-22T22:38:24.619-0300] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-22T22:38:24.627-0300] {logging_mixin.py:188} INFO - [2024-07-22T22:38:24.627-0300] {dag.py:3947} INFO - Setting next_dagrun for tutorial_objectstorage to None, run_after=None
+[2024-07-22T22:38:24.644-0300] {processor.py:183} INFO - Processing /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py took 0.051 seconds

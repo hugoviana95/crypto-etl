@@ -1,0 +1,25 @@
+[2024-07-22T22:36:49.325-0300] {processor.py:161} INFO - Started process (PID=1050719) to work on /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2024-07-22T22:36:49.326-0300] {processor.py:830} INFO - Processing file /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2024-07-22T22:36:49.327-0300] {logging_mixin.py:188} INFO - [2024-07-22T22:36:49.326-0300] {dagbag.py:545} INFO - Filling up the DagBag from /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2024-07-22T22:36:49.331-0300] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2024-07-22T22:36:49.406-0300] {logging_mixin.py:188} INFO - [2024-07-22T22:36:49.405-0300] {override.py:1858} INFO - Created Permission View: can edit on DAG:example_xcom
+[2024-07-22T22:36:49.415-0300] {logging_mixin.py:188} INFO - [2024-07-22T22:36:49.414-0300] {override.py:1858} INFO - Created Permission View: can delete on DAG:example_xcom
+[2024-07-22T22:36:49.423-0300] {logging_mixin.py:188} INFO - [2024-07-22T22:36:49.423-0300] {override.py:1858} INFO - Created Permission View: can read on DAG:example_xcom
+[2024-07-22T22:36:49.424-0300] {logging_mixin.py:188} INFO - [2024-07-22T22:36:49.424-0300] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-22T22:36:49.431-0300] {logging_mixin.py:188} INFO - [2024-07-22T22:36:49.431-0300] {dag.py:3111} INFO - Creating ORM DAG for example_xcom
+[2024-07-22T22:36:49.437-0300] {logging_mixin.py:188} INFO - [2024-07-22T22:36:49.437-0300] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2024-07-22T22:36:49.458-0300] {processor.py:183} INFO - Processing /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.137 seconds
+[2024-07-22T22:37:39.567-0300] {processor.py:161} INFO - Started process (PID=1051284) to work on /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2024-07-22T22:37:39.568-0300] {processor.py:830} INFO - Processing file /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2024-07-22T22:37:39.569-0300] {logging_mixin.py:188} INFO - [2024-07-22T22:37:39.569-0300] {dagbag.py:545} INFO - Filling up the DagBag from /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2024-07-22T22:37:39.577-0300] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2024-07-22T22:37:39.592-0300] {logging_mixin.py:188} INFO - [2024-07-22T22:37:39.592-0300] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-22T22:37:39.605-0300] {logging_mixin.py:188} INFO - [2024-07-22T22:37:39.605-0300] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2024-07-22T22:37:39.624-0300] {processor.py:183} INFO - Processing /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.061 seconds
+[2024-07-22T22:38:41.989-0300] {processor.py:161} INFO - Started process (PID=1052053) to work on /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2024-07-22T22:38:41.991-0300] {processor.py:830} INFO - Processing file /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2024-07-22T22:38:41.992-0300] {logging_mixin.py:188} INFO - [2024-07-22T22:38:41.992-0300] {dagbag.py:545} INFO - Filling up the DagBag from /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2024-07-22T22:38:41.996-0300] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2024-07-22T22:38:42.007-0300] {logging_mixin.py:188} INFO - [2024-07-22T22:38:42.007-0300] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-22T22:38:42.017-0300] {logging_mixin.py:188} INFO - [2024-07-22T22:38:42.017-0300] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2024-07-22T22:38:42.033-0300] {processor.py:183} INFO - Processing /home/hugoviana/Projetos/crypto-etl/.venv/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.047 seconds
