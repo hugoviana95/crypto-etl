@@ -1,0 +1,87 @@
+[2024-07-25T14:28:13.811-0300] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-25T14:28:13.817-0300] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Mercado_5m.get_5m_info scheduled__2024-07-25T13:15:00+00:00 [queued]>
+[2024-07-25T14:28:13.822-0300] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Mercado_5m.get_5m_info scheduled__2024-07-25T13:15:00+00:00 [queued]>
+[2024-07-25T14:28:13.822-0300] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-25T14:28:13.835-0300] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): get_5m_info> on 2024-07-25 13:15:00+00:00
+[2024-07-25T14:28:13.837-0300] {standard_task_runner.py:64} INFO - Started process 2591033 to run task
+[2024-07-25T14:28:13.840-0300] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'Mercado_5m', 'get_5m_info', 'scheduled__2024-07-25T13:15:00+00:00', '--job-id', '2113', '--raw', '--subdir', 'DAGS_FOLDER/mercado_dag.py', '--cfg-path', '/tmp/tmpsy9rwdqo']
+[2024-07-25T14:28:13.841-0300] {standard_task_runner.py:91} INFO - Job 2113: Subtask get_5m_info
+[2024-07-25T14:28:13.870-0300] {task_command.py:426} INFO - Running <TaskInstance: Mercado_5m.get_5m_info scheduled__2024-07-25T13:15:00+00:00 [running]> on host Galaxybook.
+[2024-07-25T14:28:13.913-0300] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='Mercado_5m' AIRFLOW_CTX_TASK_ID='get_5m_info' AIRFLOW_CTX_EXECUTION_DATE='2024-07-25T13:15:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-25T13:15:00+00:00'
+[2024-07-25T14:28:13.913-0300] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-25T14:28:13.920-0300] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-25T14:28:13.920-0300] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/hugoviana/Documentos/data_pipeline_airflow/.venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hugoviana/Documentos/data_pipeline_airflow/.venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hugoviana/Documentos/data_pipeline_airflow/.venv/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hugoviana/Documentos/data_pipeline_airflow/.venv/lib/python3.12/site-packages/airflow/operators/python.py", line 232, in execute
+    context_merge(context, self.op_kwargs, templates_dict=self.templates_dict)
+  File "/home/hugoviana/Documentos/data_pipeline_airflow/.venv/lib/python3.12/site-packages/airflow/utils/context.py", line 266, in context_merge
+    context.update(*args, **kwargs)
+  File "<frozen _collections_abc>", line 987, in update
+ValueError: too many values to unpack (expected 2)
+[2024-07-25T14:28:13.924-0300] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=Mercado_5m, task_id=get_5m_info, run_id=scheduled__2024-07-25T13:15:00+00:00, execution_date=20240725T131500, start_date=20240725T172813, end_date=20240725T172813
+[2024-07-25T14:28:13.933-0300] {standard_task_runner.py:110} ERROR - Failed to execute job 2113 for task get_5m_info (too many values to unpack (expected 2); 2591033)
+[2024-07-25T14:28:13.974-0300] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2024-07-25T14:28:13.987-0300] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-25T14:28:13.988-0300] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-07-25T14:30:21.206-0300] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-25T14:30:21.215-0300] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Mercado_5m.get_5m_info scheduled__2024-07-25T13:15:00+00:00 [queued]>
+[2024-07-25T14:30:21.221-0300] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Mercado_5m.get_5m_info scheduled__2024-07-25T13:15:00+00:00 [queued]>
+[2024-07-25T14:30:21.221-0300] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-25T14:30:21.242-0300] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): get_5m_info> on 2024-07-25 13:15:00+00:00
+[2024-07-25T14:30:21.245-0300] {standard_task_runner.py:64} INFO - Started process 2593220 to run task
+[2024-07-25T14:30:21.247-0300] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'Mercado_5m', 'get_5m_info', 'scheduled__2024-07-25T13:15:00+00:00', '--job-id', '2097', '--raw', '--subdir', 'DAGS_FOLDER/mercado_dag.py', '--cfg-path', '/tmp/tmpcu0ltqm8']
+[2024-07-25T14:30:21.248-0300] {standard_task_runner.py:91} INFO - Job 2097: Subtask get_5m_info
+[2024-07-25T14:30:21.283-0300] {task_command.py:426} INFO - Running <TaskInstance: Mercado_5m.get_5m_info scheduled__2024-07-25T13:15:00+00:00 [running]> on host Galaxybook.
+[2024-07-25T14:30:21.337-0300] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='Mercado_5m' AIRFLOW_CTX_TASK_ID='get_5m_info' AIRFLOW_CTX_EXECUTION_DATE='2024-07-25T13:15:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-25T13:15:00+00:00'
+[2024-07-25T14:30:21.337-0300] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-25T14:30:21.346-0300] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-25T14:30:21.346-0300] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/hugoviana/Documentos/data_pipeline_airflow/.venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hugoviana/Documentos/data_pipeline_airflow/.venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hugoviana/Documentos/data_pipeline_airflow/.venv/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hugoviana/Documentos/data_pipeline_airflow/.venv/lib/python3.12/site-packages/airflow/operators/python.py", line 232, in execute
+    context_merge(context, self.op_kwargs, templates_dict=self.templates_dict)
+  File "/home/hugoviana/Documentos/data_pipeline_airflow/.venv/lib/python3.12/site-packages/airflow/utils/context.py", line 266, in context_merge
+    context.update(*args, **kwargs)
+  File "<frozen _collections_abc>", line 987, in update
+ValueError: too many values to unpack (expected 2)
+[2024-07-25T14:30:21.351-0300] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=Mercado_5m, task_id=get_5m_info, run_id=scheduled__2024-07-25T13:15:00+00:00, execution_date=20240725T131500, start_date=20240725T173021, end_date=20240725T173021
+[2024-07-25T14:30:21.448-0300] {standard_task_runner.py:110} ERROR - Failed to execute job 2097 for task get_5m_info (too many values to unpack (expected 2); 2593220)
+[2024-07-25T14:30:21.462-0300] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2024-07-25T14:30:21.469-0300] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-25T14:30:21.469-0300] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-07-25T15:00:29.177-0300] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-25T15:00:29.184-0300] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Mercado_5m.get_5m_info scheduled__2024-07-25T13:15:00+00:00 [queued]>
+[2024-07-25T15:00:29.189-0300] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Mercado_5m.get_5m_info scheduled__2024-07-25T13:15:00+00:00 [queued]>
+[2024-07-25T15:00:29.189-0300] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-25T15:00:29.205-0300] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): get_5m_info> on 2024-07-25 13:15:00+00:00
+[2024-07-25T15:00:29.207-0300] {standard_task_runner.py:64} INFO - Started process 2619905 to run task
+[2024-07-25T15:00:29.209-0300] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'Mercado_5m', 'get_5m_info', 'scheduled__2024-07-25T13:15:00+00:00', '--job-id', '2471', '--raw', '--subdir', 'DAGS_FOLDER/mercado_dag.py', '--cfg-path', '/tmp/tmpcz528_n7']
+[2024-07-25T15:00:29.210-0300] {standard_task_runner.py:91} INFO - Job 2471: Subtask get_5m_info
+[2024-07-25T15:00:29.240-0300] {task_command.py:426} INFO - Running <TaskInstance: Mercado_5m.get_5m_info scheduled__2024-07-25T13:15:00+00:00 [running]> on host Galaxybook.
+[2024-07-25T15:00:29.302-0300] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='Mercado_5m' AIRFLOW_CTX_TASK_ID='get_5m_info' AIRFLOW_CTX_EXECUTION_DATE='2024-07-25T13:15:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-25T13:15:00+00:00'
+[2024-07-25T15:00:29.303-0300] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-25T15:00:29.382-0300] {base.py:84} INFO - Using connection ID 'mercado_default' for task execution.
+[2024-07-25T15:00:29.383-0300] {mercado_hook.py:31} INFO - URL: https://api.mercadobitcoin.net/api/v4/candles?symbol=BTC-BRL&resolution=5m&to=1721924400&from=1721924100
+[2024-07-25T15:00:29.679-0300] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-25T15:00:29.680-0300] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-25T15:00:29.682-0300] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=Mercado_5m, task_id=get_5m_info, run_id=scheduled__2024-07-25T13:15:00+00:00, execution_date=20240725T131500, start_date=20240725T180029, end_date=20240725T180029
+[2024-07-25T15:00:29.709-0300] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-07-25T15:00:29.719-0300] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-25T15:00:29.720-0300] {local_task_job_runner.py:222} INFO - ::endgroup::

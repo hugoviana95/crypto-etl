@@ -7,23 +7,34 @@ from airflow.models import BaseOperator, TaskInstance, DAG
 from hook.binance_hook import BinanceHook
 from pathlib import Path
 import csv
+from datetime import datetime
+
+
 
 class BinanceOperator(BaseOperator):
 
+    template_fields = ['file_path', 'start_time', 'end_time']
+
     def __init__(self, file_path, start_time, end_time, symbol, interval, **kwargs):
         self.file_path = file_path
-        self.start_time = start_time
-        self.end_time = end_time
+        self.start_time = self.to_timestamp(start_time)
+        self.end_time = self.to_timestamp(end_time)
         self.interval = interval
-        self.symbol = symbol
+        self.symbol = symbol    
         super().__init__(**kwargs)
+
+    
+    def to_timestamp(self, dt):
+        dt = datetime.strptime(dt, '%Y-%m-%dT%H:%M:%S.00Z')
+        timestamp = int(datetime.timestamp(dt))*1000
+        return timestamp
 
     def execute(self, context):
         (Path(self.file_path).parent).mkdir(parents=True, exist_ok=True) # Cria pasta Datalake caso não exista
         file_exists = os.path.isfile(self.file_path) # Verifica existência do arquivo csv
         is_empty = os.path.getsize(self.file_path) == 0 if file_exists else True # Verifica se o arquivo csv está em branco
         with open(self.file_path, 'a', newline='') as file:
-            r = BinanceHook(self.start_time, self.end_time, 'BTCBRL', '1m').run()
+            r = BinanceHook(self.start_time, self.end_time, self.symbol, self.interval).run()
             data = list(r.json())
             csv_writer = csv.writer(file)
             if not file_exists or is_empty:

@@ -1,0 +1,65 @@
+[2024-07-25T14:56:08.402-0300] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-25T14:56:08.407-0300] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Mercado_5m.get_5m_info scheduled__2024-07-25T02:55:00+00:00 [queued]>
+[2024-07-25T14:56:08.410-0300] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Mercado_5m.get_5m_info scheduled__2024-07-25T02:55:00+00:00 [queued]>
+[2024-07-25T14:56:08.410-0300] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-25T14:56:08.424-0300] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): get_5m_info> on 2024-07-25 02:55:00+00:00
+[2024-07-25T14:56:08.426-0300] {standard_task_runner.py:64} INFO - Started process 2615572 to run task
+[2024-07-25T14:56:08.428-0300] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'Mercado_5m', 'get_5m_info', 'scheduled__2024-07-25T02:55:00+00:00', '--job-id', '2346', '--raw', '--subdir', 'DAGS_FOLDER/mercado_dag.py', '--cfg-path', '/tmp/tmpvzwwjg8l']
+[2024-07-25T14:56:08.429-0300] {standard_task_runner.py:91} INFO - Job 2346: Subtask get_5m_info
+[2024-07-25T14:56:08.462-0300] {task_command.py:426} INFO - Running <TaskInstance: Mercado_5m.get_5m_info scheduled__2024-07-25T02:55:00+00:00 [running]> on host Galaxybook.
+[2024-07-25T14:56:08.522-0300] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='Mercado_5m' AIRFLOW_CTX_TASK_ID='get_5m_info' AIRFLOW_CTX_EXECUTION_DATE='2024-07-25T02:55:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-25T02:55:00+00:00'
+[2024-07-25T14:56:08.522-0300] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-25T14:56:08.601-0300] {base.py:84} INFO - Using connection ID 'mercado_default' for task execution.
+[2024-07-25T14:56:08.601-0300] {mercado_hook.py:31} INFO - URL: https://api.mercadobitcoin.net/api/v4/candles?symbol=BTC-BRL&resolution=5m&to=1721887200&from=1721886900
+[2024-07-25T14:56:08.876-0300] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-25T14:56:08.877-0300] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-25T14:56:08.881-0300] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=Mercado_5m, task_id=get_5m_info, run_id=scheduled__2024-07-25T02:55:00+00:00, execution_date=20240725T025500, start_date=20240725T175608, end_date=20240725T175608
+[2024-07-25T14:56:08.925-0300] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-07-25T14:56:08.941-0300] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-25T14:56:08.942-0300] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-07-25T16:20:14.471-0300] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-25T16:20:14.477-0300] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Mercado_5m.get_5m_info scheduled__2024-07-25T02:55:00+00:00 [queued]>
+[2024-07-25T16:20:14.480-0300] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Mercado_5m.get_5m_info scheduled__2024-07-25T02:55:00+00:00 [queued]>
+[2024-07-25T16:20:14.480-0300] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-25T16:20:14.494-0300] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): get_5m_info> on 2024-07-25 02:55:00+00:00
+[2024-07-25T16:20:14.496-0300] {standard_task_runner.py:64} INFO - Started process 2663272 to run task
+[2024-07-25T16:20:14.498-0300] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'Mercado_5m', 'get_5m_info', 'scheduled__2024-07-25T02:55:00+00:00', '--job-id', '2281', '--raw', '--subdir', 'DAGS_FOLDER/mercado_dag.py', '--cfg-path', '/tmp/tmpc89ddpyo']
+[2024-07-25T16:20:14.499-0300] {standard_task_runner.py:91} INFO - Job 2281: Subtask get_5m_info
+[2024-07-25T16:20:14.528-0300] {task_command.py:426} INFO - Running <TaskInstance: Mercado_5m.get_5m_info scheduled__2024-07-25T02:55:00+00:00 [running]> on host Galaxybook.
+[2024-07-25T16:20:14.585-0300] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='Mercado_5m' AIRFLOW_CTX_TASK_ID='get_5m_info' AIRFLOW_CTX_EXECUTION_DATE='2024-07-25T02:55:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-25T02:55:00+00:00'
+[2024-07-25T16:20:14.586-0300] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-25T16:20:14.594-0300] {mercado_dag.py:22} INFO - To: 2024-07-25 03:00:00+00:00
+[2024-07-25T16:20:14.594-0300] {mercado_dag.py:23} INFO - From: 2024-07-25 02:55:00+00:00
+[2024-07-25T16:20:14.595-0300] {mercado_dag.py:24} INFO - To timestamp: 1721876400 
+[2024-07-25T16:20:14.595-0300] {mercado_dag.py:25} INFO - From timestamp: 1721876100 
+[2024-07-25T16:20:14.658-0300] {base.py:84} INFO - Using connection ID 'mercado_default' for task execution.
+[2024-07-25T16:20:14.660-0300] {mercado_hook.py:31} INFO - URL: https://api.mercadobitcoin.net/api/v4/candles?symbol=BTC-BRL&resolution=5m&to=1721876400&from=1721876100
+[2024-07-25T16:20:14.964-0300] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-25T16:20:14.965-0300] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-25T16:20:14.967-0300] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=Mercado_5m, task_id=get_5m_info, run_id=scheduled__2024-07-25T02:55:00+00:00, execution_date=20240725T025500, start_date=20240725T192014, end_date=20240725T192014
+[2024-07-25T16:20:15.001-0300] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-07-25T16:20:15.007-0300] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-25T16:20:15.008-0300] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-07-25T16:26:20.464-0300] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-25T16:26:20.470-0300] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Mercado_5m.get_5m_info scheduled__2024-07-25T02:55:00+00:00 [queued]>
+[2024-07-25T16:26:20.473-0300] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Mercado_5m.get_5m_info scheduled__2024-07-25T02:55:00+00:00 [queued]>
+[2024-07-25T16:26:20.474-0300] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-25T16:26:20.486-0300] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): get_5m_info> on 2024-07-25 02:55:00+00:00
+[2024-07-25T16:26:20.488-0300] {standard_task_runner.py:64} INFO - Started process 2669369 to run task
+[2024-07-25T16:26:20.490-0300] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'Mercado_5m', 'get_5m_info', 'scheduled__2024-07-25T02:55:00+00:00', '--job-id', '2455', '--raw', '--subdir', 'DAGS_FOLDER/mercado_dag.py', '--cfg-path', '/tmp/tmp6fud1nwe']
+[2024-07-25T16:26:20.491-0300] {standard_task_runner.py:91} INFO - Job 2455: Subtask get_5m_info
+[2024-07-25T16:26:20.519-0300] {task_command.py:426} INFO - Running <TaskInstance: Mercado_5m.get_5m_info scheduled__2024-07-25T02:55:00+00:00 [running]> on host Galaxybook.
+[2024-07-25T16:26:20.576-0300] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='Mercado_5m' AIRFLOW_CTX_TASK_ID='get_5m_info' AIRFLOW_CTX_EXECUTION_DATE='2024-07-25T02:55:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-25T02:55:00+00:00'
+[2024-07-25T16:26:20.577-0300] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-25T16:26:20.584-0300] {mercado_dag.py:22} INFO - To: 2024-07-25 03:00:00+00:00
+[2024-07-25T16:26:20.584-0300] {mercado_dag.py:23} INFO - From: 2024-07-25 02:55:00+00:00
+[2024-07-25T16:26:20.585-0300] {mercado_dag.py:24} INFO - To timestamp: 1721876400000 
+[2024-07-25T16:26:20.585-0300] {mercado_dag.py:25} INFO - From timestamp: 1721876100000 
+[2024-07-25T16:26:20.645-0300] {base.py:84} INFO - Using connection ID 'mercado_default' for task execution.
+[2024-07-25T16:26:20.646-0300] {mercado_hook.py:31} INFO - URL: https://api.mercadobitcoin.net/api/v4/candles?symbol=BTC-BRL&resolution=5m&to=1721876400000&from=1721876100000
+[2024-07-25T16:26:21.003-0300] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-25T16:26:21.003-0300] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-25T16:26:21.006-0300] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=Mercado_5m, task_id=get_5m_info, run_id=scheduled__2024-07-25T02:55:00+00:00, execution_date=20240725T025500, start_date=20240725T192620, end_date=20240725T192621
+[2024-07-25T16:26:21.031-0300] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-07-25T16:26:21.037-0300] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-25T16:26:21.037-0300] {local_task_job_runner.py:222} INFO - ::endgroup::

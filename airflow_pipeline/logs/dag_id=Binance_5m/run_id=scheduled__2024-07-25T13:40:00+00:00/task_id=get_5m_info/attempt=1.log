@@ -1,0 +1,112 @@
+[2024-07-25T14:28:28.312-0300] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-25T14:28:28.318-0300] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Binance_5m.get_5m_info scheduled__2024-07-25T13:40:00+00:00 [queued]>
+[2024-07-25T14:28:28.321-0300] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Binance_5m.get_5m_info scheduled__2024-07-25T13:40:00+00:00 [queued]>
+[2024-07-25T14:28:28.321-0300] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-25T14:28:28.335-0300] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): get_5m_info> on 2024-07-25 13:40:00+00:00
+[2024-07-25T14:28:28.336-0300] {standard_task_runner.py:64} INFO - Started process 2591281 to run task
+[2024-07-25T14:28:28.339-0300] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'Binance_5m', 'get_5m_info', 'scheduled__2024-07-25T13:40:00+00:00', '--job-id', '2123', '--raw', '--subdir', 'DAGS_FOLDER/binance_dag.py', '--cfg-path', '/tmp/tmpjnbgsk_7']
+[2024-07-25T14:28:28.340-0300] {standard_task_runner.py:91} INFO - Job 2123: Subtask get_5m_info
+[2024-07-25T14:28:28.364-0300] {task_command.py:426} INFO - Running <TaskInstance: Binance_5m.get_5m_info scheduled__2024-07-25T13:40:00+00:00 [running]> on host Galaxybook.
+[2024-07-25T14:28:28.408-0300] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='Binance_5m' AIRFLOW_CTX_TASK_ID='get_5m_info' AIRFLOW_CTX_EXECUTION_DATE='2024-07-25T13:40:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-25T13:40:00+00:00'
+[2024-07-25T14:28:28.408-0300] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-25T14:28:28.416-0300] {binance_dag.py:23} INFO - End Time: 2024-07-25T13:45:00.00Z
+[2024-07-25T14:28:28.470-0300] {base.py:84} INFO - Using connection ID 'binance_default' for task execution.
+[2024-07-25T14:28:28.470-0300] {logging_mixin.py:188} INFO - https://api.binance.com
+[2024-07-25T14:28:28.471-0300] {binance_hook.py:35} INFO - URL: https://api.binance.com/api/v3/klines?symbol=BTCBRL&interval=5m&startTime=1721925600000&endTime=1721925900000
+[2024-07-25T14:28:28.862-0300] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-25T14:28:28.862-0300] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-25T14:28:28.866-0300] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=Binance_5m, task_id=get_5m_info, run_id=scheduled__2024-07-25T13:40:00+00:00, execution_date=20240725T134000, start_date=20240725T172828, end_date=20240725T172828
+[2024-07-25T14:28:28.925-0300] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-07-25T14:28:28.933-0300] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-25T14:28:28.933-0300] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-07-25T14:31:49.632-0300] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-25T14:31:49.638-0300] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Binance_5m.get_5m_info scheduled__2024-07-25T13:40:00+00:00 [queued]>
+[2024-07-25T14:31:49.642-0300] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Binance_5m.get_5m_info scheduled__2024-07-25T13:40:00+00:00 [queued]>
+[2024-07-25T14:31:49.642-0300] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-25T14:31:49.661-0300] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): get_5m_info> on 2024-07-25 13:40:00+00:00
+[2024-07-25T14:31:49.663-0300] {standard_task_runner.py:64} INFO - Started process 2594693 to run task
+[2024-07-25T14:31:49.665-0300] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'Binance_5m', 'get_5m_info', 'scheduled__2024-07-25T13:40:00+00:00', '--job-id', '2140', '--raw', '--subdir', 'DAGS_FOLDER/binance_dag.py', '--cfg-path', '/tmp/tmphzrkiebd']
+[2024-07-25T14:31:49.666-0300] {standard_task_runner.py:91} INFO - Job 2140: Subtask get_5m_info
+[2024-07-25T14:31:49.698-0300] {task_command.py:426} INFO - Running <TaskInstance: Binance_5m.get_5m_info scheduled__2024-07-25T13:40:00+00:00 [running]> on host Galaxybook.
+[2024-07-25T14:31:49.765-0300] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='Binance_5m' AIRFLOW_CTX_TASK_ID='get_5m_info' AIRFLOW_CTX_EXECUTION_DATE='2024-07-25T13:40:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-25T13:40:00+00:00'
+[2024-07-25T14:31:49.766-0300] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-25T14:31:49.776-0300] {binance_dag.py:23} INFO - End Time: 2024-07-25T13:45:00.00Z
+[2024-07-25T14:31:49.849-0300] {base.py:84} INFO - Using connection ID 'binance_default' for task execution.
+[2024-07-25T14:31:49.849-0300] {logging_mixin.py:188} INFO - https://api.binance.com
+[2024-07-25T14:31:49.850-0300] {binance_hook.py:35} INFO - URL: https://api.binance.com/api/v3/klines?symbol=BTCBRL&interval=5m&startTime=1721925600000&endTime=1721925900000
+[2024-07-25T14:31:50.270-0300] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-25T14:31:50.271-0300] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-25T14:31:50.273-0300] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=Binance_5m, task_id=get_5m_info, run_id=scheduled__2024-07-25T13:40:00+00:00, execution_date=20240725T134000, start_date=20240725T173149, end_date=20240725T173150
+[2024-07-25T14:31:50.289-0300] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-07-25T14:31:50.296-0300] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-25T14:31:50.296-0300] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-07-25T14:53:05.705-0300] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-25T14:53:05.710-0300] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Binance_5m.get_5m_info scheduled__2024-07-25T13:40:00+00:00 [queued]>
+[2024-07-25T14:53:05.713-0300] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Binance_5m.get_5m_info scheduled__2024-07-25T13:40:00+00:00 [queued]>
+[2024-07-25T14:53:05.713-0300] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-25T14:53:05.726-0300] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): get_5m_info> on 2024-07-25 13:40:00+00:00
+[2024-07-25T14:53:05.727-0300] {standard_task_runner.py:64} INFO - Started process 2612482 to run task
+[2024-07-25T14:53:05.730-0300] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'Binance_5m', 'get_5m_info', 'scheduled__2024-07-25T13:40:00+00:00', '--job-id', '2256', '--raw', '--subdir', 'DAGS_FOLDER/binance_dag.py', '--cfg-path', '/tmp/tmpo9ha95px']
+[2024-07-25T14:53:05.731-0300] {standard_task_runner.py:91} INFO - Job 2256: Subtask get_5m_info
+[2024-07-25T14:53:05.768-0300] {task_command.py:426} INFO - Running <TaskInstance: Binance_5m.get_5m_info scheduled__2024-07-25T13:40:00+00:00 [running]> on host Galaxybook.
+[2024-07-25T14:53:05.820-0300] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='Binance_5m' AIRFLOW_CTX_TASK_ID='get_5m_info' AIRFLOW_CTX_EXECUTION_DATE='2024-07-25T13:40:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-25T13:40:00+00:00'
+[2024-07-25T14:53:05.821-0300] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-25T14:53:05.828-0300] {binance_dag.py:23} INFO - End Time: 2024-07-25T13:45:00.00Z
+[2024-07-25T14:53:05.828-0300] {binance_dag.py:24} INFO - Start Time: 2024-07-25T13:40:00.00Z
+[2024-07-25T14:53:05.882-0300] {base.py:84} INFO - Using connection ID 'binance_default' for task execution.
+[2024-07-25T14:53:05.883-0300] {logging_mixin.py:188} INFO - https://api.binance.com
+[2024-07-25T14:53:05.883-0300] {binance_hook.py:35} INFO - URL: https://api.binance.com/api/v3/klines?symbol=BTCBRL&interval=5m&startTime=1721925600000&endTime=1721925899999
+[2024-07-25T14:53:06.269-0300] {binance_dag.py:43} INFO - r: [[1721925600000, '367655.00000000', '367836.00000000', '367297.00000000', '367533.00000000', '0.26848000', 1721925899999, '98683.12154000', 65, '0.18061000', '66394.45975000', '0']]
+[2024-07-25T14:53:06.271-0300] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-25T14:53:06.272-0300] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-25T14:53:06.275-0300] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=Binance_5m, task_id=get_5m_info, run_id=scheduled__2024-07-25T13:40:00+00:00, execution_date=20240725T134000, start_date=20240725T175305, end_date=20240725T175306
+[2024-07-25T14:53:06.317-0300] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-07-25T14:53:06.326-0300] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-25T14:53:06.326-0300] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-07-25T15:22:57.840-0300] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-25T15:22:57.845-0300] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Binance_5m.get_5m_info scheduled__2024-07-25T13:40:00+00:00 [queued]>
+[2024-07-25T15:22:57.849-0300] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Binance_5m.get_5m_info scheduled__2024-07-25T13:40:00+00:00 [queued]>
+[2024-07-25T15:22:57.849-0300] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-25T15:22:57.862-0300] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): get_5m_info> on 2024-07-25 13:40:00+00:00
+[2024-07-25T15:22:57.864-0300] {standard_task_runner.py:64} INFO - Started process 2634659 to run task
+[2024-07-25T15:22:57.866-0300] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'Binance_5m', 'get_5m_info', 'scheduled__2024-07-25T13:40:00+00:00', '--job-id', '2699', '--raw', '--subdir', 'DAGS_FOLDER/binance_dag.py', '--cfg-path', '/tmp/tmpcd5ccl3f']
+[2024-07-25T15:22:57.867-0300] {standard_task_runner.py:91} INFO - Job 2699: Subtask get_5m_info
+[2024-07-25T15:22:57.890-0300] {task_command.py:426} INFO - Running <TaskInstance: Binance_5m.get_5m_info scheduled__2024-07-25T13:40:00+00:00 [running]> on host Galaxybook.
+[2024-07-25T15:22:57.942-0300] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='Binance_5m' AIRFLOW_CTX_TASK_ID='get_5m_info' AIRFLOW_CTX_EXECUTION_DATE='2024-07-25T13:40:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-25T13:40:00+00:00'
+[2024-07-25T15:22:57.942-0300] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-25T15:22:57.949-0300] {binance_dag.py:23} INFO - End Time: 2024-07-25T13:45:00.00Z
+[2024-07-25T15:22:57.949-0300] {binance_dag.py:24} INFO - Start Time: 2024-07-25T13:40:00.00Z
+[2024-07-25T15:22:58.001-0300] {binance_dag.py:25} INFO - 1721925600000
+[2024-07-25T15:22:58.003-0300] {base.py:84} INFO - Using connection ID 'binance_default' for task execution.
+[2024-07-25T15:22:58.003-0300] {logging_mixin.py:188} INFO - https://api.binance.com
+[2024-07-25T15:22:58.004-0300] {binance_hook.py:35} INFO - URL: https://api.binance.com/api/v3/klines?symbol=BTCBRL&interval=5m&startTime=1721925600000&endTime=1721925899999
+[2024-07-25T15:22:58.502-0300] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-25T15:22:58.503-0300] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-25T15:22:58.505-0300] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=Binance_5m, task_id=get_5m_info, run_id=scheduled__2024-07-25T13:40:00+00:00, execution_date=20240725T134000, start_date=20240725T182257, end_date=20240725T182258
+[2024-07-25T15:22:58.567-0300] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-07-25T15:22:58.573-0300] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-25T15:22:58.574-0300] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-07-25T16:21:06.933-0300] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-25T16:21:06.939-0300] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Binance_5m.get_5m_info scheduled__2024-07-25T13:40:00+00:00 [queued]>
+[2024-07-25T16:21:06.942-0300] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Binance_5m.get_5m_info scheduled__2024-07-25T13:40:00+00:00 [queued]>
+[2024-07-25T16:21:06.942-0300] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-25T16:21:06.956-0300] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): get_5m_info> on 2024-07-25 13:40:00+00:00
+[2024-07-25T16:21:06.958-0300] {standard_task_runner.py:64} INFO - Started process 2664173 to run task
+[2024-07-25T16:21:06.961-0300] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'Binance_5m', 'get_5m_info', 'scheduled__2024-07-25T13:40:00+00:00', '--job-id', '2310', '--raw', '--subdir', 'DAGS_FOLDER/binance_dag.py', '--cfg-path', '/tmp/tmpnqrni86n']
+[2024-07-25T16:21:06.962-0300] {standard_task_runner.py:91} INFO - Job 2310: Subtask get_5m_info
+[2024-07-25T16:21:06.990-0300] {task_command.py:426} INFO - Running <TaskInstance: Binance_5m.get_5m_info scheduled__2024-07-25T13:40:00+00:00 [running]> on host Galaxybook.
+[2024-07-25T16:21:07.041-0300] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='Binance_5m' AIRFLOW_CTX_TASK_ID='get_5m_info' AIRFLOW_CTX_EXECUTION_DATE='2024-07-25T13:40:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-25T13:40:00+00:00'
+[2024-07-25T16:21:07.042-0300] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-25T16:21:07.050-0300] {binance_dag.py:22} INFO - End Time: 2024-07-25 13:45:00+00:00
+[2024-07-25T16:21:07.051-0300] {binance_dag.py:23} INFO - Start Time: 2024-07-25 13:40:00+00:00
+[2024-07-25T16:21:07.051-0300] {binance_dag.py:24} INFO - Start timestamp: 1721914800000
+[2024-07-25T16:21:07.051-0300] {binance_dag.py:25} INFO - End timestamp: 1721915100000
+[2024-07-25T16:21:07.112-0300] {base.py:84} INFO - Using connection ID 'binance_default' for task execution.
+[2024-07-25T16:21:07.112-0300] {logging_mixin.py:188} INFO - https://api.binance.com
+[2024-07-25T16:21:07.113-0300] {binance_hook.py:35} INFO - URL: https://api.binance.com/api/v3/klines?symbol=BTCBRL&interval=5m&startTime=1721914800000&endTime=1721915099999&timeZone=-3
+[2024-07-25T16:21:07.497-0300] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-25T16:21:07.498-0300] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-25T16:21:07.501-0300] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=Binance_5m, task_id=get_5m_info, run_id=scheduled__2024-07-25T13:40:00+00:00, execution_date=20240725T134000, start_date=20240725T192106, end_date=20240725T192107
+[2024-07-25T16:21:07.536-0300] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-07-25T16:21:07.543-0300] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-25T16:21:07.544-0300] {local_task_job_runner.py:222} INFO - ::endgroup::
