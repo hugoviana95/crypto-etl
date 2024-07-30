@@ -1,0 +1,21 @@
+[2024-07-30T19:38:54.642-0300] {processor.py:161} INFO - Started process (PID=1342415) to work on /home/hugoviana/Projetos/crypto-etl/airflow_pipeline/dags/kandles_5m_dag.py
+[2024-07-30T19:38:54.642-0300] {processor.py:830} INFO - Processing file /home/hugoviana/Projetos/crypto-etl/airflow_pipeline/dags/kandles_5m_dag.py for tasks to queue
+[2024-07-30T19:38:54.643-0300] {logging_mixin.py:188} INFO - [2024-07-30T19:38:54.643-0300] {dagbag.py:545} INFO - Filling up the DagBag from /home/hugoviana/Projetos/crypto-etl/airflow_pipeline/dags/kandles_5m_dag.py
+[2024-07-30T19:38:54.659-0300] {processor.py:840} INFO - DAG(s) '5m_kandles' retrieved from /home/hugoviana/Projetos/crypto-etl/airflow_pipeline/dags/kandles_5m_dag.py
+[2024-07-30T19:38:54.735-0300] {logging_mixin.py:188} INFO - [2024-07-30T19:38:54.735-0300] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-30T19:38:54.745-0300] {logging_mixin.py:188} INFO - [2024-07-30T19:38:54.745-0300] {dag.py:3947} INFO - Setting next_dagrun for 5m_kandles to 2024-07-30 22:35:00+00:00, run_after=2024-07-30 22:40:00+00:00
+[2024-07-30T19:38:54.777-0300] {processor.py:183} INFO - Processing /home/hugoviana/Projetos/crypto-etl/airflow_pipeline/dags/kandles_5m_dag.py took 0.141 seconds
+[2024-07-30T19:39:25.084-0300] {processor.py:161} INFO - Started process (PID=1342788) to work on /home/hugoviana/Projetos/crypto-etl/airflow_pipeline/dags/kandles_5m_dag.py
+[2024-07-30T19:39:25.086-0300] {processor.py:830} INFO - Processing file /home/hugoviana/Projetos/crypto-etl/airflow_pipeline/dags/kandles_5m_dag.py for tasks to queue
+[2024-07-30T19:39:25.087-0300] {logging_mixin.py:188} INFO - [2024-07-30T19:39:25.086-0300] {dagbag.py:545} INFO - Filling up the DagBag from /home/hugoviana/Projetos/crypto-etl/airflow_pipeline/dags/kandles_5m_dag.py
+[2024-07-30T19:39:25.099-0300] {processor.py:840} INFO - DAG(s) '5m_kandles' retrieved from /home/hugoviana/Projetos/crypto-etl/airflow_pipeline/dags/kandles_5m_dag.py
+[2024-07-30T19:39:25.167-0300] {logging_mixin.py:188} INFO - [2024-07-30T19:39:25.166-0300] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-30T19:39:25.176-0300] {logging_mixin.py:188} INFO - [2024-07-30T19:39:25.175-0300] {dag.py:3947} INFO - Setting next_dagrun for 5m_kandles to 2024-07-30 22:35:00+00:00, run_after=2024-07-30 22:40:00+00:00
+[2024-07-30T19:39:25.194-0300] {processor.py:183} INFO - Processing /home/hugoviana/Projetos/crypto-etl/airflow_pipeline/dags/kandles_5m_dag.py took 0.115 seconds
+[2024-07-30T19:39:55.643-0300] {processor.py:161} INFO - Started process (PID=1343090) to work on /home/hugoviana/Projetos/crypto-etl/airflow_pipeline/dags/kandles_5m_dag.py
+[2024-07-30T19:39:55.649-0300] {processor.py:830} INFO - Processing file /home/hugoviana/Projetos/crypto-etl/airflow_pipeline/dags/kandles_5m_dag.py for tasks to queue
+[2024-07-30T19:39:55.649-0300] {logging_mixin.py:188} INFO - [2024-07-30T19:39:55.649-0300] {dagbag.py:545} INFO - Filling up the DagBag from /home/hugoviana/Projetos/crypto-etl/airflow_pipeline/dags/kandles_5m_dag.py
+[2024-07-30T19:39:55.661-0300] {processor.py:840} INFO - DAG(s) '5m_kandles' retrieved from /home/hugoviana/Projetos/crypto-etl/airflow_pipeline/dags/kandles_5m_dag.py
+[2024-07-30T19:39:55.718-0300] {logging_mixin.py:188} INFO - [2024-07-30T19:39:55.718-0300] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-30T19:39:55.731-0300] {logging_mixin.py:188} INFO - [2024-07-30T19:39:55.731-0300] {dag.py:3947} INFO - Setting next_dagrun for 5m_kandles to 2024-07-30 22:35:00+00:00, run_after=2024-07-30 22:40:00+00:00
+[2024-07-30T19:39:55.747-0300] {processor.py:183} INFO - Processing /home/hugoviana/Projetos/crypto-etl/airflow_pipeline/dags/kandles_5m_dag.py took 0.108 seconds

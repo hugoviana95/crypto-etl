@@ -5,13 +5,12 @@ from urllib.parse import urlencode
 class BinanceHook(HttpHook):
 # See the API documentation at https://developers.binance.com/docs/binance-spot-api-docs/rest-api#klinecandlestick-data
 
-    def __init__(self, start_time, end_time, symbol, interval, time_zone):
+    def __init__(self, start_time, end_time, symbol, interval):
         self.start_time = start_time
         self.end_time = end_time
         self.symbol = symbol
         self.interval = interval
         self.conn_id = 'binance_default'
-        self.time_zone = time_zone
         super().__init__(http_conn_id=self.conn_id)
 
 
@@ -22,7 +21,6 @@ class BinanceHook(HttpHook):
             'interval': self.interval,
             'startTime': self.start_time,
             'endTime': self.end_time,
-            'timeZone': self.time_zone,
         }
         url = f"{url}?{urlencode(params)}"
         print(self.base_url)
