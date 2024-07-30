@@ -78,7 +78,7 @@ with DAG(
     catchup=True
 ):
     
-    BASE_FOLDER = "../Datalake/bronze/{exchange}/30m_kandles/{symbol}"
+    BASE_FOLDER = os.path.expanduser("~crypto-etl/Datalake/bronze/{exchange}/5m_kandles/{symbol}")
     
 
     ## BINANCE

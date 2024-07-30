@@ -84,7 +84,7 @@ with DAG(
     catchup=True
 ):
     
-    BASE_FOLDER = "../Datalake/bronze/{exchange}/5m_kandles/{symbol}"
+    BASE_FOLDER = os.path.expanduser("~crypto-etl/Datalake/bronze/{exchange}/5m_kandles/{symbol}")
     
 
     ## BINANCE
@@ -105,7 +105,7 @@ with DAG(
     
     # Task de criação do csv para o modelo de predição
     model_transform = SparkSubmitOperator(task_id='model_transform',
-                                          application='../src/model_transform.py',
+                                          application=os.path.expanduser('~crypto-etl/src/model_transform.py'),
                                           name='model_transform')
 
 
@@ -147,9 +147,3 @@ with DAG(
 
     for task in binance_tasks:
         task >> model_transform
-
-    # for task in foxbit_tasks:
-    #     task >> 
-
-    # for task in novadax_tasks:
-    #     task >> 
