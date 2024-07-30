@@ -88,3 +88,4 @@
 {"code": "A10000", "data": [{"amount": 0.61328652, "closePrice": 375162.6, "count": 18, "highPrice": 375299.0, "lowPrice": 374062.51, "openPrice": 374756.55, "score": 1722375900, "symbol": "BTC_BRL", "vol": 229887.0}], "message": "Success"}
 {"code": "A10000", "data": [{"amount": 0.58562264, "closePrice": 374960.31, "count": 18, "highPrice": 375225.69, "lowPrice": 374242.36, "openPrice": 375225.69, "score": 1722376800, "symbol": "BTC_BRL", "vol": 219619.98}], "message": "Success"}
 {"code": "A10000", "data": [{"amount": 0.57051024, "closePrice": 375294.31, "count": 19, "highPrice": 375444.17, "lowPrice": 375000.0, "openPrice": 375084.82, "score": 1722377700, "symbol": "BTC_BRL", "vol": 214055.58}], "message": "Success"}
+{"code": "A10000", "data": [{"amount": 0.6440624, "closePrice": 374570.94, "count": 15, "highPrice": 374722.54, "lowPrice": 374031.3, "openPrice": 374493.37, "score": 1722379500, "symbol": "BTC_BRL", "vol": 241052.79}], "message": "Success"}

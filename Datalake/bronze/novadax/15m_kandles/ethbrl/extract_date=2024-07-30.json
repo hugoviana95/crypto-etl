@@ -88,3 +88,4 @@
 {"code": "A10000", "data": [{"amount": 8.69620656, "closePrice": 18566.01, "count": 14, "highPrice": 18598.39, "lowPrice": 18542.59, "openPrice": 18554.19, "score": 1722375900, "symbol": "ETH_BRL", "vol": 161394.25}], "message": "Success"}
 {"code": "A10000", "data": [{"amount": 9.34368236, "closePrice": 18539.9, "count": 22, "highPrice": 18588.4, "lowPrice": 18491.03, "openPrice": 18553.51, "score": 1722376800, "symbol": "ETH_BRL", "vol": 173205.09}], "message": "Success"}
 {"code": "A10000", "data": [{"amount": 8.67931752, "closePrice": 18595.5, "count": 17, "highPrice": 18596.01, "lowPrice": 18533.17, "openPrice": 18547.6, "score": 1722377700, "symbol": "ETH_BRL", "vol": 161179.9}], "message": "Success"}
+{"code": "A10000", "data": [{"amount": 9.12707512, "closePrice": 18547.91, "count": 13, "highPrice": 18553.74, "lowPrice": 18505.51, "openPrice": 18542.54, "score": 1722379500, "symbol": "ETH_BRL", "vol": 169159.99}], "message": "Success"}

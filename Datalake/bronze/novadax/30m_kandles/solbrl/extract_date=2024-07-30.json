@@ -43,3 +43,4 @@
 {"code": "A10000", "data": [{"amount": 153.268, "closePrice": 1015.252, "count": 37, "highPrice": 1019.265, "lowPrice": 1012.376, "openPrice": 1015.712, "score": 1722373200, "symbol": "SOL_BRL", "vol": 155561.39}], "message": "Success"}
 {"code": "A10000", "data": [{"amount": 162.072, "closePrice": 1016.148, "count": 28, "highPrice": 1016.772, "lowPrice": 1013.781, "openPrice": 1016.677, "score": 1722375000, "symbol": "SOL_BRL", "vol": 164481.15}], "message": "Success"}
 {"code": "A10000", "data": [{"amount": 177.332, "closePrice": 1015.831, "count": 34, "highPrice": 1016.178, "lowPrice": 1011.481, "openPrice": 1015.695, "score": 1722376800, "symbol": "SOL_BRL", "vol": 179799.18}], "message": "Success"}
+{"code": "A10000", "data": [{"amount": 140.48, "closePrice": 1014.677, "count": 32, "highPrice": 1016.031, "lowPrice": 1010.115, "openPrice": 1014.026, "score": 1722378600, "symbol": "SOL_BRL", "vol": 142337.12}], "message": "Success"}
