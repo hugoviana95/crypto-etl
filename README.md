@@ -61,7 +61,7 @@ export AIRFLOW_HOME=~/crypto-etl
 export SPARK_HOME=~/crypto-etl/spark-3.5.1-bin-hadoop3
 ```
 
-7- Executar o airflow em modo standalone<br>
+7- Executar o airflow em modo standalone e iniciar a dag na interface em [localhost](http://localhost:8080/)<br>
 ``` bash
 airflow standalone
 ```
