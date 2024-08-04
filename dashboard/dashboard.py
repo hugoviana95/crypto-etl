@@ -40,7 +40,7 @@ if data.shape[0] > 10: # Paralisa o carregamento do dashboard caso não haja dad
         coin = st.selectbox("Selecione a moeda",data['symbol'].unique())
         data = data.loc[data['symbol'] == coin]
     with col2:
-        st.image(f'assets/{coin}.png', width=100)
+        st.image(os.path.join(BASE_FOLDER, f'dashboard/assets/{coin}.png'), width=100)
 
     # Gráfico para acompanhar predições
     chart = px.line(data,
