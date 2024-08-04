@@ -28,27 +28,29 @@ Além disso, ele usa alguns modelos para fazer a predição do preço de algumas
 
 ### Procedimentos para execução
 
-1- Clonar repositório na pasta **home** do linux<br>
+1. Clonar repositório na pasta **home** do linux<br>
 ```bash
 git clone https://github.com/hugoviana95/crypto-etl.git
 ```
 
-2- Instalar bibliotecas requeridas<br>
+2. Navegue até a pasta raiz do projeto, crie e ative um ambiente virtual
+```bash
+cd crypto-etl
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+3. Instalar bibliotecas requeridas<br>
 ```bash
 pip install -r requirements.txt
 ```
 
-3- Instalar o Apache Airflow<br>
-``` bash
-pip install "apache-airflow[celery]==2.9.3" --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.9.3/constraints-3.8.txt"
-```
-
-4- Baixar o Apache Spark<br>
+4. Baixar o Apache Spark<br>
 ``` bash
 wget https://dlcdn.apache.org/spark/spark-3.5.1/spark-3.5.1-bin-hadoop3.tgz
 ```
 
-5- Extrair o arquivo<br>
+5. Extrair o arquivo<br>
 ``` bash
 tar -xvzf spark-3.5.1-bin-hadoop3.tgz
 ```
