@@ -4,3 +4,4 @@ testes_notebook.ipynb
 standalone_admin_password.txt
 airflow-webserver.pid
 logs/
+spark-3.5.1-bin-hadoop3/

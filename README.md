@@ -1,23 +1,20 @@
 
 # Crypto ETL
 
-Este projeto implementa um processo de ETL (Extração, Transformação e Carga) para obter os dados de fechamento de mercado da exchange Binance, utilizando Apache Airflow. 
+Este projeto implementa um processo de ETL (Extração, Transformação e Carga) para obter os dados de fechamento de mercado da exchange Binance, utilizando Apache Airflow e Pyspark.
+
+Além disso, ele usa alguns modelos para fazer a predição do preço de algumas moedas dentro do intervalo de 5 min e exibe isso em um dashboard feito com Streamlit.
+
+**Obs.: Projeto desenvolvido apenas para aprendizado das ferramentas utilizadas. Não recomendo que as predições geradas pelos modelos sejam utilizadas como base para realizar qualquer operação.**
 
 ## Estrutura do Projeto
 
-```plaintext
-airflow_pipeline/
-    ├── dags/
-    │   └── binance_dag.py
-    ├── hook/
-    │   └── binance_hook.py
-    └── operators/
-        └── binance_operator.py
-```
-
-- **dags/**: Contém o arquivo do DAG responsável por orquestrar a rotina de extração, programada para rodar a cada 1 minuto.
-- **hook/**: Contém o script que realiza a consulta à API da Binance.
-- **operators/**: Contém o operator personalizado que executa a tarefa de coleta de informações da API usando o Airflow.
+- **dags/**: Contém os arquivos de DAG sendo um para cada intervalo de tempo (5m, 15m e 30m)
+- **dashboard/**: Contém o a arquivo que constrói o dashboard.
+- **datalake/**: Contém os arquivos extraídos divididos pela técnica de medalhão.
+- **hook/**: Contém os scripts que realiza a consulta às APIs das exchanges.
+- **mdoels/**: Contém os arquivos com os modelos que são carregados para realizar as predições.
+- **src/**: Contém o arquivo de transformação para criação da base que alimenta o modelo.
 
 ## Configuração e Instalação
 
@@ -25,18 +22,54 @@ airflow_pipeline/
 
 - Python 3.7 ou superior
 - Apache Airflow 2.0 ou superior
+- Apache Spark 3.5 ou superior
 - Biblioteca `requests` para interação com a API da Binance
+- Biblioteca `pendulum` para manipulação de datas
 
-## Descrição dos Componentes
+### Procedimentos para execução
 
-### DAG (`binance_dag.py`)
+1- Clonar repositório na pasta **home** do linux<br>
+```bash
+git clone https://github.com/hugoviana95/crypto-etl.git
+```
 
-Este arquivo define o DAG do Airflow que orquestra o processo de ETL. O DAG está configurado para ser executado a cada 1 minuto, garantindo que os dados mais recentes do mercado sejam extraídos continuamente.
+2- Instalar bibliotecas requeridas<br>
+```bash
+pip install -r requirements.txt
+```
+3- Instalar o Apache Spark e Apache Airflow com o comando abaixo<br>
+``` bash
+pip install "apache-airflow[celery]==2.9.3" --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.9.3/constraints-3.8.txt"
+```
 
-### Hook (`binance_hook.py`)
+4- Baixar o Apache Spark<br>
+``` bash
+wget https://dlcdn.apache.og/spark/spark-3.5.1/spark-3.5.1-bin-hadoop3.tgz`
+```
 
-Este script define o hook personalizado para interagir com a API da Binance. Ele encapsula a lógica de autenticação e consulta aos endpoints necessários para obter os dados de mercado.
+5- Extrair o arquivo<br>
+``` bash
+tar tar -xvzf spark-3.5.1-bin-hadoop3.tgz
+```
 
-### Operator (`binance_operator.py`)
+6- Definir o diretório das pastas do Airflow e Spark<br>
+``` bash
+export AIRFLOW_HOME=~/crypto-etl
+export SPARK_HOME=~/crypto-etl/spark-3.5.1-bin-hadoop3
+```
 
-Este arquivo contém o operator personalizado que utiliza o hook para coletar os dados da API da Binance e processá-los conforme necessário. O operator é integrado ao DAG para executar a tarefa de extração de dados.
+7- Executar o airflow em modo standalone<br>
+``` bash
+airflow standalone
+```
+
+8- Executar dashboard para visualização
+``` bash
+streamlit run dashboard.py
+```
+
+**Imagens**
+
+![alt text](image.png)
+
+![alt text](image-3.png)
