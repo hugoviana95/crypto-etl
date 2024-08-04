@@ -37,19 +37,20 @@ git clone https://github.com/hugoviana95/crypto-etl.git
 ```bash
 pip install -r requirements.txt
 ```
-3- Instalar o Apache Spark e Apache Airflow com o comando abaixo<br>
+
+3- Instalar o Apache Airflow<br>
 ``` bash
 pip install "apache-airflow[celery]==2.9.3" --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.9.3/constraints-3.8.txt"
 ```
 
 4- Baixar o Apache Spark<br>
 ``` bash
-wget https://dlcdn.apache.og/spark/spark-3.5.1/spark-3.5.1-bin-hadoop3.tgz`
+wget https://dlcdn.apache.org/spark/spark-3.5.1/spark-3.5.1-bin-hadoop3.tgz
 ```
 
 5- Extrair o arquivo<br>
 ``` bash
-tar tar -xvzf spark-3.5.1-bin-hadoop3.tgz
+tar -xvzf spark-3.5.1-bin-hadoop3.tgz
 ```
 
 6- Definir o diretório das pastas do Airflow e Spark<br>
