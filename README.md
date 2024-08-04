@@ -68,7 +68,7 @@ airflow standalone
 
 8- Executar dashboard para visualização
 ``` bash
-streamlit run dashboard.py
+streamlit run dashboard/dashboard.py
 ```
 
 **Imagens**
