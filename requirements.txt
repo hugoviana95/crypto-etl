@@ -1,6 +1,6 @@
+apache-airflow[celery]==2.9.3
+-f https://raw.githubusercontent.com/apache/airflow/constraints-2.9.3/constraints-3.8.txt
 apache-airflow-providers-apache-spark==4.9.0
-apache-airflow==2.9.3
-apache-airflow-providers-google==10.1.0
 pyspark==3.5.1
 pendulum==3.0.0
 requests==2.31.0
