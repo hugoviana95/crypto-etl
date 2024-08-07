@@ -9,7 +9,7 @@ Além disso, ele usa alguns modelos para fazer a predição do preço de algumas
 
 ## Estrutura do Projeto
 
-- **dags/**: Contém os arquivos de DAG sendo um para cada intervalo de tempo (5m, 15m e 30m)
+- **dags/**: Contém os arquivos de DAG sendo um para cada intervalo de tempo (5m)
 - **dashboard/**: Contém o a arquivo que constrói o dashboard.
 - **datalake/**: Contém os arquivos extraídos divididos pela técnica de medalhão.
 - **hook/**: Contém os scripts que realiza a consulta às APIs das exchanges.
